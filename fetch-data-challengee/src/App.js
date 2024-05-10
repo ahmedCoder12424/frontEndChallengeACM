@@ -3,6 +3,11 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 
 import{Table} from"antd";
+import
+{ Avatar }
+from
+"antd"
+;
 
 function App() {
 
@@ -50,6 +55,7 @@ function App() {
       title: 'Avatar',
       dataIndex: 'avatar',
       key: 'avatar',
+      render: (dataIndex, record) =>  <Avatar src={dataIndex} alt={record.name} />
     },
   ];
 
